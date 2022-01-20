@@ -12,11 +12,12 @@ bool isprime(int num){
 }
 
 int main() {
-  long long number = 600851475143 , factor = 2;
-  while(number!=1){
+  long long number = 600851475143, factor = 2;
+  while(number>1){
     while(number%factor == 0){
       number = number / factor;
     }
+    if(number == 1) break;
     do{
       factor++;
     }while(!isprime(factor));
