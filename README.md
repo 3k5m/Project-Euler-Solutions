@@ -11,4 +11,5 @@ P2: 4613732
 
 P3: 6857
 
+Starting from this problem the code I use will be template for CP
 P4: 906609
