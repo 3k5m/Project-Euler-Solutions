@@ -3,17 +3,16 @@ using namespace std;
 
 typedef unsigned long long ull;
 
-const ull n = 20;
-ull num = 1;
+const ull n = 100;
+ull sumofsquares = 0, squareofsums = 0;
 
 void solve(){
-    for(ull i=2;i<=n;i++){
-        if(num % i != 0){
-            ull j = gcd(i, num);
-            num *= (i/j);
-        }
+    for(ull i=1;i<=n;i++){
+        sumofsquares += i * i;
+        squareofsums += i;
     }
-    cout<<num;
+    squareofsums = squareofsums * squareofsums;
+    cout<<llabs(sumofsquares - squareofsums);
 }
 
 int main() {
