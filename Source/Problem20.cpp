@@ -6,6 +6,7 @@ typedef unsigned long long ull;
 #define BASE 100
 #define IS_DEBUG true
 
+//interestingly, you can just use addBigNum for problems 13, 16, AND 20.
 //copied from code for problem 13
 string addBigNum(string n1, string n2){
   string Result;
