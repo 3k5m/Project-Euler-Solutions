@@ -4,7 +4,6 @@ using namespace std;
 typedef unsigned long long ull;
 
 void solve(){
-  
 }
 
 int main() {
